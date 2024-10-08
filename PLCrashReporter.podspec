@@ -9,13 +9,13 @@ Pod::Spec.new do |spec|
   spec.license     = { :type => 'MIT', :file => 'LICENSE.txt' }
   spec.authors     = { 'Microsoft' => 'appcentersdk@microsoft.com' }
 
-  spec.source      = { :http     => "https://github.com/microsoft/plcrashreporter/releases/download/#{spec.version}/PLCrashReporter-Static-#{spec.version}.xcframework.zip",
+  spec.source      = { :http     => "https://github.com/melekr/plcrashreporter/releases/download/1.11.2/PLCrashReporter.xcframework.zip",
                        :flatten  => true }
 
   spec.resource_bundle = { 'PLCrashReporter' => 'CrashReporter.xcframework/PrivacyInfo.xcprivacy' }
 
   spec.ios.deployment_target    = '11.0'
-  spec.osx.deployment_target    = '10.9'
+  spec.osx.deployment_target    = '10.13'
   spec.tvos.deployment_target   = '11.0'
   spec.vendored_frameworks = "CrashReporter.xcframework"
 end
